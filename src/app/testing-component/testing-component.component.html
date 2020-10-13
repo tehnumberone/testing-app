@@ -1,0 +1,10 @@
+<p>testing-component works!</p>
+
+<form [formGroup]="form" class="form-group" (ngSubmit)="testMethod()">
+  <input type="text" matInput [(ngModel)]="text"
+         formControlName="text">
+  <button class="btn-dark">submit the text</button>
+  <label>{{text}}</label>
+</form>
+
+
